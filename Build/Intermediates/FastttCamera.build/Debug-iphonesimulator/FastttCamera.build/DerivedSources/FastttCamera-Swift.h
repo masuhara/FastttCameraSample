@@ -109,15 +109,27 @@ SWIFT_CLASS("_TtC12FastttCamera11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class FastttCamera;
+@class FastttFilterCamera;
+@class UIImage;
+@protocol FastttCameraInterface;
+@class FastttCapturedImage;
+@class UIView;
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12FastttCamera14ViewController")
 @interface ViewController : UIViewController <FastttCameraDelegate>
-@property (nonatomic, readonly, strong) FastttCamera * __nonnull camera;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified cameraView;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imageView;
+@property (nonatomic, strong) FastttFilterCamera * __null_unspecified camera;
+@property (nonatomic, readonly, strong) UIImage * __nullable filterImage;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
+- (void)cameraController:(id <FastttCameraInterface> __null_unspecified)cameraController didFinishCapturingImage:(FastttCapturedImage * __null_unspecified)capturedImage;
+- (void)cameraController:(id <FastttCameraInterface> __null_unspecified)cameraController didFinishScalingCapturedImage:(FastttCapturedImage * __null_unspecified)capturedImage;
+- (void)cameraController:(id <FastttCameraInterface> __null_unspecified)cameraController didFinishNormalizingCapturedImage:(FastttCapturedImage * __null_unspecified)capturedImage;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

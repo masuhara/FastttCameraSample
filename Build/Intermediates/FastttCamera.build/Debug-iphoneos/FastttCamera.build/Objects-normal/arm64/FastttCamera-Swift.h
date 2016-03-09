@@ -87,6 +87,7 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
 #endif
 
 #import "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/FastttCamera-Bridging-Header.h"
@@ -109,19 +110,31 @@ SWIFT_CLASS("_TtC12FastttCamera11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
+
+SWIFT_CLASS("_TtC12FastttCamera6Filter")
+@interface Filter : NSObject
+@property (nonatomic, copy) NSString * __nullable filterName;
+@property (nonatomic, strong) UIImage * __nullable filterImage;
+- (Filter * __nonnull)nextFilter;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class FastttFilterCamera;
 @protocol FastttCameraInterface;
 @class FastttCapturedImage;
 @class UIView;
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12FastttCamera14ViewController")
 @interface ViewController : UIViewController <FastttCameraDelegate>
 @property (nonatomic, weak) IBOutlet UIView * __null_unspecified cameraView;
-@property (nonatomic, strong) FastttFilterCamera * __nonnull camera;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imageView;
+@property (nonatomic, strong) FastttFilterCamera * __null_unspecified camera;
+@property (nonatomic, strong) Filter * __nullable currentFilter;
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (void)cameraController:(id <FastttCameraInterface> __null_unspecified)cameraController didFinishCapturingImage:(FastttCapturedImage * __null_unspecified)capturedImage;
 - (void)cameraController:(id <FastttCameraInterface> __null_unspecified)cameraController didFinishScalingCapturedImage:(FastttCapturedImage * __null_unspecified)capturedImage;

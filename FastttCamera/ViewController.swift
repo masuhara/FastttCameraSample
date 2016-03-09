@@ -7,24 +7,29 @@
 //
 
 import UIKit
+import Photos
 
 class ViewController: UIViewController, FastttCameraDelegate {
     
     @IBOutlet weak var cameraView: UIView!
-    var camera: FastttFilterCamera = FastttFilterCamera()
+    @IBOutlet weak var imageView: UIImageView!
+    var camera: FastttFilterCamera!
+    var currentFilter: Filter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.currentFilter = Filter.filterWithType(Filter.FastttFilterType.None)
+        camera = FastttFilterCamera(filterImage: self.currentFilter?.filterImage)
+        camera.view.frame = cameraView.frame
+        camera.delegate = self
+        camera.cameraDevice = FastttCameraDevice.Rear
+        camera.maxScaledDimension = 600
+        self.fastttAddChildViewController(camera)
+        
+        imageView.image = camera.filterImage
     }
     
-    override func viewDidAppear(animated: Bool) {
-        camera.filterImage = UIImage(named: "lookup")
-        camera.delegate = self
-        self.fastttAddChildViewController(camera)
-        camera.view.frame = cameraView.frame
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -32,7 +37,19 @@ class ViewController: UIViewController, FastttCameraDelegate {
     
     // MARK: - FastttCameraDelegate
     func cameraController(cameraController: FastttCameraInterface!, didFinishCapturingImage capturedImage: FastttCapturedImage!) {
-        
+
+        let image = capturedImage.fullImage
+        PHPhotoLibrary.sharedPhotoLibrary().performChanges({ () -> Void in
+            PHAssetChangeRequest.creationRequestForAssetFromImage(image)
+            }) { (succeed, error) -> Void in
+                if succeed == true {
+                    print("保存成功!")
+                }
+                
+                if error != nil {
+                    print("error")
+                }
+        }
     }
     
     func cameraController(cameraController: FastttCameraInterface!, didFinishScalingCapturedImage capturedImage: FastttCapturedImage!) {
@@ -51,7 +68,7 @@ class ViewController: UIViewController, FastttCameraDelegate {
     }
     
     @IBAction private func switchCamera() {
-        if FastttCamera.isCameraDeviceAvailable(FastttCameraDevice.Front) {
+        if FastttFilterCamera.isCameraDeviceAvailable(FastttCameraDevice.Front) {
             if camera.cameraDevice == FastttCameraDevice.Front {
                 camera.cameraDevice = FastttCameraDevice.Rear
             }else {
@@ -61,13 +78,19 @@ class ViewController: UIViewController, FastttCameraDelegate {
     }
     
     @IBAction private func flash() {
-        if FastttCamera.isTorchAvailableForCameraDevice(camera.cameraDevice) {
+        if FastttFilterCamera.isTorchAvailableForCameraDevice(camera.cameraDevice) {
             if camera.cameraTorchMode == FastttCameraTorchMode.Off {
                 camera.cameraTorchMode = FastttCameraTorchMode.On
             }else {
                 camera.cameraTorchMode = FastttCameraTorchMode.Off
             }
         }
+    }
+    
+    @IBAction private func changeFilter() {
+        self.currentFilter = self.currentFilter!.nextFilter()
+        camera.filterImage = self.currentFilter!.filterImage
+        imageView.image = camera.filterImage
     }
 }
 
