@@ -11,17 +11,48 @@
 		7AABB0551C8EEA8F00B49B7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AABB0541C8EEA8F00B49B7D /* ViewController.swift */; };
 		7AABB0581C8EEA8F00B49B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0561C8EEA8F00B49B7D /* Main.storyboard */; };
 		7AABB05A1C8EEA8F00B49B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0591C8EEA8F00B49B7D /* Assets.xcassets */; };
-		7AABB05D1C8EEA8F00B49B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB05B1C8EEA8F00B49B7D /* LaunchScreen.storyboard */; };
+		7AABB06C1C8F052E00B49B7D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0691C8F052E00B49B7D /* Default-568h@2x.png */; };
+		7AABB06D1C8F052E00B49B7D /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB06A1C8F052E00B49B7D /* Default-667h@2x.png */; };
+		7AABB06E1C8F052E00B49B7D /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB06B1C8F052E00B49B7D /* Default-736h@3x.png */; };
+		7AABB0731C8F15BA00B49B7D /* flipcamera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0721C8F15BA00B49B7D /* flipcamera@2x.png */; };
+		7AABB0771C8F17DE00B49B7D /* takebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0761C8F17DE00B49B7D /* takebutton@2x.png */; };
+		7AABB07B1C8F1A8900B49B7D /* flashbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB07A1C8F1A8900B49B7D /* flashbutton@2x.png */; };
+		7AABB0891C8F2C0800B49B7D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB07E1C8F2C0800B49B7D /* Contents.json */; };
+		7AABB08A1C8F2C0800B49B7D /* lookup_bw.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB07F1C8F2C0800B49B7D /* lookup_bw.png */; };
+		7AABB08B1C8F2C0800B49B7D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0811C8F2C0800B49B7D /* Contents.json */; };
+		7AABB08C1C8F2C0800B49B7D /* lookup_highcontrast.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0821C8F2C0800B49B7D /* lookup_highcontrast.png */; };
+		7AABB08D1C8F2C0800B49B7D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0841C8F2C0800B49B7D /* Contents.json */; };
+		7AABB08E1C8F2C0800B49B7D /* lookup_retro.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0851C8F2C0800B49B7D /* lookup_retro.png */; };
+		7AABB08F1C8F2C0800B49B7D /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0871C8F2C0800B49B7D /* Contents.json */; };
+		7AABB0901C8F2C0800B49B7D /* lookup_sepia.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0881C8F2C0800B49B7D /* lookup_sepia.png */; };
+		ED174B61CA7AB4FB52ECEEEE /* libPods-FastttCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A96A885F04D587F9E0DDDD9 /* libPods-FastttCamera.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		058E0BC05C11EE57BF4692B3 /* Pods-FastttCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastttCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastttCamera/Pods-FastttCamera.release.xcconfig"; sourceTree = "<group>"; };
+		3639740F01C496A26CDE4E07 /* Pods-FastttCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastttCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastttCamera/Pods-FastttCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		6A96A885F04D587F9E0DDDD9 /* libPods-FastttCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastttCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AABB04F1C8EEA8F00B49B7D /* FastttCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastttCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AABB0521C8EEA8F00B49B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AABB0541C8EEA8F00B49B7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AABB0571C8EEA8F00B49B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AABB0591C8EEA8F00B49B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7AABB05C1C8EEA8F00B49B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AABB05E1C8EEA8F00B49B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AABB0641C8EEE1400B49B7D /* FastttCamera-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FastttCamera-Bridging-Header.h"; sourceTree = "<group>"; };
+		7AABB0691C8F052E00B49B7D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7AABB06A1C8F052E00B49B7D /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		7AABB06B1C8F052E00B49B7D /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		7AABB0721C8F15BA00B49B7D /* flipcamera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flipcamera@2x.png"; sourceTree = "<group>"; };
+		7AABB0761C8F17DE00B49B7D /* takebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takebutton@2x.png"; sourceTree = "<group>"; };
+		7AABB07A1C8F1A8900B49B7D /* flashbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashbutton@2x.png"; sourceTree = "<group>"; };
+		7AABB07E1C8F2C0800B49B7D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		7AABB07F1C8F2C0800B49B7D /* lookup_bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_bw.png; sourceTree = "<group>"; };
+		7AABB0811C8F2C0800B49B7D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		7AABB0821C8F2C0800B49B7D /* lookup_highcontrast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_highcontrast.png; sourceTree = "<group>"; };
+		7AABB0841C8F2C0800B49B7D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		7AABB0851C8F2C0800B49B7D /* lookup_retro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_retro.png; sourceTree = "<group>"; };
+		7AABB0871C8F2C0800B49B7D /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		7AABB0881C8F2C0800B49B7D /* lookup_sepia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lookup_sepia.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +60,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED174B61CA7AB4FB52ECEEEE /* libPods-FastttCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C42953404C6D19EBC7F19A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A96A885F04D587F9E0DDDD9 /* libPods-FastttCamera.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47059F0029844B2BC6F0C7E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3639740F01C496A26CDE4E07 /* Pods-FastttCamera.debug.xcconfig */,
+				058E0BC05C11EE57BF4692B3 /* Pods-FastttCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7AABB0461C8EEA8F00B49B7D = {
 			isa = PBXGroup;
 			children = (
 				7AABB0511C8EEA8F00B49B7D /* FastttCamera */,
 				7AABB0501C8EEA8F00B49B7D /* Products */,
+				47059F0029844B2BC6F0C7E1 /* Pods */,
+				3C42953404C6D19EBC7F19A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +105,84 @@
 		7AABB0511C8EEA8F00B49B7D /* FastttCamera */ = {
 			isa = PBXGroup;
 			children = (
+				7AABB06F1C8F14A600B49B7D /* Resources */,
 				7AABB0521C8EEA8F00B49B7D /* AppDelegate.swift */,
 				7AABB0541C8EEA8F00B49B7D /* ViewController.swift */,
 				7AABB0561C8EEA8F00B49B7D /* Main.storyboard */,
 				7AABB0591C8EEA8F00B49B7D /* Assets.xcassets */,
-				7AABB05B1C8EEA8F00B49B7D /* LaunchScreen.storyboard */,
 				7AABB05E1C8EEA8F00B49B7D /* Info.plist */,
+				7AABB0641C8EEE1400B49B7D /* FastttCamera-Bridging-Header.h */,
 			);
 			path = FastttCamera;
+			sourceTree = "<group>";
+		};
+		7AABB0681C8F052E00B49B7D /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB0691C8F052E00B49B7D /* Default-568h@2x.png */,
+				7AABB06A1C8F052E00B49B7D /* Default-667h@2x.png */,
+				7AABB06B1C8F052E00B49B7D /* Default-736h@3x.png */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
+		7AABB06F1C8F14A600B49B7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB07C1C8F2C0800B49B7D /* LookupImages */,
+				7AABB07A1C8F1A8900B49B7D /* flashbutton@2x.png */,
+				7AABB0761C8F17DE00B49B7D /* takebutton@2x.png */,
+				7AABB0721C8F15BA00B49B7D /* flipcamera@2x.png */,
+				7AABB0681C8F052E00B49B7D /* Defaults */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7AABB07C1C8F2C0800B49B7D /* LookupImages */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB07D1C8F2C0800B49B7D /* BWFilter.imageset */,
+				7AABB0801C8F2C0800B49B7D /* HighContrastFilter.imageset */,
+				7AABB0831C8F2C0800B49B7D /* RetroFilter.imageset */,
+				7AABB0861C8F2C0800B49B7D /* SepiaFilter.imageset */,
+			);
+			path = LookupImages;
+			sourceTree = "<group>";
+		};
+		7AABB07D1C8F2C0800B49B7D /* BWFilter.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB07E1C8F2C0800B49B7D /* Contents.json */,
+				7AABB07F1C8F2C0800B49B7D /* lookup_bw.png */,
+			);
+			path = BWFilter.imageset;
+			sourceTree = "<group>";
+		};
+		7AABB0801C8F2C0800B49B7D /* HighContrastFilter.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB0811C8F2C0800B49B7D /* Contents.json */,
+				7AABB0821C8F2C0800B49B7D /* lookup_highcontrast.png */,
+			);
+			path = HighContrastFilter.imageset;
+			sourceTree = "<group>";
+		};
+		7AABB0831C8F2C0800B49B7D /* RetroFilter.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB0841C8F2C0800B49B7D /* Contents.json */,
+				7AABB0851C8F2C0800B49B7D /* lookup_retro.png */,
+			);
+			path = RetroFilter.imageset;
+			sourceTree = "<group>";
+		};
+		7AABB0861C8F2C0800B49B7D /* SepiaFilter.imageset */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB0871C8F2C0800B49B7D /* Contents.json */,
+				7AABB0881C8F2C0800B49B7D /* lookup_sepia.png */,
+			);
+			path = SepiaFilter.imageset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AABB0611C8EEA8F00B49B7D /* Build configuration list for PBXNativeTarget "FastttCamera" */;
 			buildPhases = (
+				3F8CB1F16059646D0393E141 /* Check Pods Manifest.lock */,
 				7AABB04B1C8EEA8F00B49B7D /* Sources */,
 				7AABB04C1C8EEA8F00B49B7D /* Frameworks */,
 				7AABB04D1C8EEA8F00B49B7D /* Resources */,
+				8CCC752C717C18A30446FA0D /* Embed Pods Frameworks */,
+				41037FCD83D34B7435BA4A04 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,13 +246,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AABB05D1C8EEA8F00B49B7D /* LaunchScreen.storyboard in Resources */,
+				7AABB06C1C8F052E00B49B7D /* Default-568h@2x.png in Resources */,
+				7AABB07B1C8F1A8900B49B7D /* flashbutton@2x.png in Resources */,
+				7AABB08A1C8F2C0800B49B7D /* lookup_bw.png in Resources */,
+				7AABB0891C8F2C0800B49B7D /* Contents.json in Resources */,
 				7AABB05A1C8EEA8F00B49B7D /* Assets.xcassets in Resources */,
+				7AABB08F1C8F2C0800B49B7D /* Contents.json in Resources */,
 				7AABB0581C8EEA8F00B49B7D /* Main.storyboard in Resources */,
+				7AABB06D1C8F052E00B49B7D /* Default-667h@2x.png in Resources */,
+				7AABB08D1C8F2C0800B49B7D /* Contents.json in Resources */,
+				7AABB0731C8F15BA00B49B7D /* flipcamera@2x.png in Resources */,
+				7AABB06E1C8F052E00B49B7D /* Default-736h@3x.png in Resources */,
+				7AABB08E1C8F2C0800B49B7D /* lookup_retro.png in Resources */,
+				7AABB08C1C8F2C0800B49B7D /* lookup_highcontrast.png in Resources */,
+				7AABB08B1C8F2C0800B49B7D /* Contents.json in Resources */,
+				7AABB0901C8F2C0800B49B7D /* lookup_sepia.png in Resources */,
+				7AABB0771C8F17DE00B49B7D /* takebutton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F8CB1F16059646D0393E141 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		41037FCD83D34B7435BA4A04 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastttCamera/Pods-FastttCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CCC752C717C18A30446FA0D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FastttCamera/Pods-FastttCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AABB04B1C8EEA8F00B49B7D /* Sources */ = {
@@ -149,14 +334,6 @@
 				7AABB0571C8EEA8F00B49B7D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7AABB05B1C8EEA8F00B49B7D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AABB05C1C8EEA8F00B49B7D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -245,23 +422,32 @@
 		};
 		7AABB0621C8EEA8F00B49B7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3639740F01C496A26CDE4E07 /* Pods-FastttCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FastttCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.masuhara.FastttCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FastttCamera/FastttCamera-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7AABB0631C8EEA8F00B49B7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058E0BC05C11EE57BF4692B3 /* Pods-FastttCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FastttCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.masuhara.FastttCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FastttCamera/FastttCamera-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +470,7 @@
 				7AABB0631C8EEA8F00B49B7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,276 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ViewController"
+provides-nominal:
+- "C12FastttCamera14ViewController"
+provides-member:
+- ["C12FastttCamera14ViewController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "camera"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- "UIViewController"
+- "ViewController"
+- "FastttCameraDelegate"
+- "FastttCamera"
+depends-member:
+- ["PSs9AnyObject", "FastttCamera"]
+- ["PSs9AnyObject", "camera"]
+- ["PSs9AnyObject", "cameraController"]
+- !private ["PSs9AnyObject", "delegate"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "fastttAddChildViewController"]
+- !private ["PSs9AnyObject", "frame"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "FastttCamera"]
+- ["PSs11CVarArgType", "camera"]
+- ["PSs11CVarArgType", "cameraController"]
+- !private ["PSs11CVarArgType", "delegate"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "fastttAddChildViewController"]
+- !private ["PSs11CVarArgType", "frame"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "FastttCamera"]
+- ["PSs23CustomStringConvertible", "camera"]
+- ["PSs23CustomStringConvertible", "cameraController"]
+- !private ["PSs23CustomStringConvertible", "delegate"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "fastttAddChildViewController"]
+- !private ["PSs23CustomStringConvertible", "frame"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "FastttCamera"]
+- ["PSs9Equatable", "camera"]
+- ["PSs9Equatable", "cameraController"]
+- !private ["PSs9Equatable", "delegate"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "fastttAddChildViewController"]
+- !private ["PSs9Equatable", "frame"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["CSo12FastttCamera", "delegate"]
+- ["CSo12FastttCamera", "init"]
+- !private ["CSo12FastttCamera", "view"]
+- ["PSo20FastttCameraDelegate", "FastttCamera"]
+- !private ["PSo20FastttCameraDelegate", "camera"]
+- ["PSo20FastttCameraDelegate", "cameraController"]
+- !private ["PSo20FastttCameraDelegate", "fastttAddChildViewController"]
+- ["PSo20FastttCameraDelegate", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo20FastttCameraDelegate", "view"]
+- ["PSo20FastttCameraDelegate", ""]
+- !private ["PSo21FastttCameraInterface", "delegate"]
+- ["PSo21FastttCameraInterface", "init"]
+- !private ["PSo21FastttCameraInterface", "view"]
+- ["PSs8Hashable", "FastttCamera"]
+- ["PSs8Hashable", "camera"]
+- ["PSs8Hashable", "cameraController"]
+- !private ["PSs8Hashable", "delegate"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "fastttAddChildViewController"]
+- !private ["PSs8Hashable", "frame"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "FastttCamera"]
+- ["PSo8NSCoding", "camera"]
+- ["PSo8NSCoding", "cameraController"]
+- !private ["PSo8NSCoding", "delegate"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "fastttAddChildViewController"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "FastttCamera"]
+- ["PSo26NSExtensionRequestHandling", "camera"]
+- ["PSo26NSExtensionRequestHandling", "cameraController"]
+- !private ["PSo26NSExtensionRequestHandling", "delegate"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "fastttAddChildViewController"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "FastttCamera"]
+- ["CSo8NSObject", "camera"]
+- ["CSo8NSObject", "cameraController"]
+- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "fastttAddChildViewController"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "userDeniedCameraPermissionsForCameraController"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "FastttCamera"]
+- ["PSo16NSObjectProtocol", "camera"]
+- ["PSo16NSObjectProtocol", "cameraController"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "fastttAddChildViewController"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo12UIAppearance", "frame"]
+- ["PSo21UIAppearanceContainer", "FastttCamera"]
+- ["PSo21UIAppearanceContainer", "camera"]
+- ["PSo21UIAppearanceContainer", "cameraController"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "fastttAddChildViewController"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "FastttCamera"]
+- ["PSo18UIContentContainer", "camera"]
+- ["PSo18UIContentContainer", "cameraController"]
+- !private ["PSo18UIContentContainer", "delegate"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "fastttAddChildViewController"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- ["PSo18UIFocusEnvironment", "FastttCamera"]
+- ["PSo18UIFocusEnvironment", "camera"]
+- ["PSo18UIFocusEnvironment", "cameraController"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "fastttAddChildViewController"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "FastttCamera"]
+- ["CSo11UIResponder", "camera"]
+- ["CSo11UIResponder", "cameraController"]
+- !private ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "fastttAddChildViewController"]
+- !private ["CSo11UIResponder", "frame"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "userDeniedCameraPermissionsForCameraController"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "FastttCamera"]
+- ["PSo16UIStateRestoring", "camera"]
+- ["PSo16UIStateRestoring", "cameraController"]
+- !private ["PSo16UIStateRestoring", "delegate"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "fastttAddChildViewController"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "FastttCamera"]
+- ["PSo18UITraitEnvironment", "camera"]
+- ["PSo18UITraitEnvironment", "cameraController"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "fastttAddChildViewController"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "userDeniedCameraPermissionsForCameraController"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "frame"]
+- ["CSo16UIViewController", "FastttCamera"]
+- ["CSo16UIViewController", "camera"]
+- ["CSo16UIViewController", "cameraController"]
+- !private ["CSo16UIViewController", "delegate"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "fastttAddChildViewController"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "userDeniedCameraPermissionsForCameraController"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- ["C12FastttCamera14ViewController", "FastttCamera"]
+- ["C12FastttCamera14ViewController", "camera"]
+- ["C12FastttCamera14ViewController", "cameraController"]
+- ["C12FastttCamera14ViewController", "deinit"]
+- ["C12FastttCamera14ViewController", "didReceiveMemoryWarning"]
+- !private ["C12FastttCamera14ViewController", "fastttAddChildViewController"]
+- ["C12FastttCamera14ViewController", "init"]
+- ["C12FastttCamera14ViewController", "userDeniedCameraPermissionsForCameraController"]
+- !private ["C12FastttCamera14ViewController", "view"]
+- ["C12FastttCamera14ViewController", "viewDidLoad"]
+- !private ["PSs12_Reflectable", "frame"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "CSo12FastttCamera"
+- "PSo20FastttCameraDelegate"
+- "PSo21FastttCameraInterface"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "C12FastttCamera14ViewController"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/FastttCamera-Bridging-Header.h"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/FastttCamera.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/FastttCameraInterface.h"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/FastttCameraTypes.h"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/FastttCapturedImage.h"
+- "/Users/Masuhara/Desktop/FastttCamera/Pods/Headers/Public/FastttCamera/UIViewController+FastttCamera.h"
+interface-hash: "1626891cb2dca40d41817fe465d82d15"
