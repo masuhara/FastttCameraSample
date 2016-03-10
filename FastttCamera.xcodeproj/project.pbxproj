@@ -84,8 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				7AABB0521C8EEA8F00B49B7D /* AppDelegate.swift */,
-				7AABB0541C8EEA8F00B49B7D /* ViewController.swift */,
 				7A5B31C61C91CDF9005A316C /* EditViewController.swift */,
+				7AABB0541C8EEA8F00B49B7D /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,8 +103,7 @@
 			children = (
 				7A5B31CB1C91D10C005A316C /* FilterScrollView.swift */,
 			);
-			name = Views;
-			path = Models;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7AABB0461C8EEA8F00B49B7D = {
@@ -130,8 +129,8 @@
 			children = (
 				7A5B31C41C91CD16005A316C /* Controllers */,
 				7A5B31C51C91CD35005A316C /* Models */,
-				7A5B31CA1C91D0F4005A316C /* Views */,
 				7AABB06F1C8F14A600B49B7D /* Resources */,
+				7A5B31CA1C91D0F4005A316C /* Views */,
 				7AABB0641C8EEE1400B49B7D /* FastttCamera-Bridging-Header.h */,
 				7AABB0561C8EEA8F00B49B7D /* Main.storyboard */,
 			);
