@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C12FastttCamera11AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationWillTerminate"
+- "application"
 - "applicationDidBecomeActive"
 - "window"
-- "application"
 - "applicationWillEnterForeground"
 - "applicationDidEnterBackground"
-- "applicationWillTerminate"
 - "applicationWillResignActive"
 depends-top-level:
-- "UIResponder"
-- "Bool"
 - "NSObject"
+- "UIResponder"
 - "AnyObject"
-- "UIApplication"
+- "Bool"
 - "UIWindow"
-- "AppDelegate"
-- !private "BooleanLiteralType"
+- "UIApplication"
 - "UIApplicationDelegate"
+- !private "BooleanLiteralType"
+- "AppDelegate"
 depends-member:
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]

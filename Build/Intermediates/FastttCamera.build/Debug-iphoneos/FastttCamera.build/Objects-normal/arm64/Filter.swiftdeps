@@ -8,17 +8,17 @@ provides-member:
 - ["C12FastttCamera6Filter", ""]
 - ["OC12FastttCamera6Filter16FastttFilterType", ""]
 provides-dynamic-lookup:
-- "filterImage"
 - "nextFilter"
+- "filterImage"
 - "filterName"
 depends-top-level:
+- "Filter"
 - !private "StringLiteralType"
 - "NSObject"
 - "UIImage"
-- "=="
-- "Filter"
 - "String"
 - !private ">"
+- "=="
 depends-member:
 - !private ["PSs9AnyObject", "Filter"]
 - !private ["PSs9AnyObject", "UIImage"]
@@ -26,6 +26,7 @@ depends-member:
 - ["PSs9AnyObject", "filterImage"]
 - ["PSs9AnyObject", "filterName"]
 - ["PSs9AnyObject", "filterType"]
+- ["PSs9AnyObject", "filterTypes"]
 - ["PSs9AnyObject", "filterWithType"]
 - ["PSs9AnyObject", "imageForFilterType"]
 - ["PSs9AnyObject", "init"]
@@ -48,6 +49,7 @@ depends-member:
 - ["PSs11CVarArgType", "filterImage"]
 - ["PSs11CVarArgType", "filterName"]
 - ["PSs11CVarArgType", "filterType"]
+- ["PSs11CVarArgType", "filterTypes"]
 - ["PSs11CVarArgType", "filterWithType"]
 - !private ["PSs11CVarArgType", "hashValue"]
 - ["PSs11CVarArgType", "imageForFilterType"]
@@ -77,6 +79,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "filterImage"]
 - ["PSs23CustomStringConvertible", "filterName"]
 - ["PSs23CustomStringConvertible", "filterType"]
+- ["PSs23CustomStringConvertible", "filterTypes"]
 - ["PSs23CustomStringConvertible", "filterWithType"]
 - !private ["PSs23CustomStringConvertible", "hashValue"]
 - ["PSs23CustomStringConvertible", "imageForFilterType"]
@@ -91,6 +94,7 @@ depends-member:
 - ["PSs9Equatable", "HighContrast"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - ["PSs9Equatable", "None"]
+- ["PSs9Equatable", "RedEyes"]
 - ["PSs9Equatable", "Retro"]
 - ["PSs9Equatable", "Sepia"]
 - !private ["PSs9Equatable", "UIImage"]
@@ -99,6 +103,7 @@ depends-member:
 - ["PSs9Equatable", "filterImage"]
 - ["PSs9Equatable", "filterName"]
 - ["PSs9Equatable", "filterType"]
+- ["PSs9Equatable", "filterTypes"]
 - ["PSs9Equatable", "filterWithType"]
 - ["PSs9Equatable", "hashValue"]
 - ["PSs9Equatable", "imageForFilterType"]
@@ -111,6 +116,7 @@ depends-member:
 - ["OC12FastttCamera6Filter16FastttFilterType", "BW"]
 - ["OC12FastttCamera6Filter16FastttFilterType", "HighContrast"]
 - ["OC12FastttCamera6Filter16FastttFilterType", "None"]
+- ["OC12FastttCamera6Filter16FastttFilterType", "RedEyes"]
 - ["OC12FastttCamera6Filter16FastttFilterType", "Retro"]
 - ["OC12FastttCamera6Filter16FastttFilterType", "Sepia"]
 - ["OC12FastttCamera6Filter16FastttFilterType", "deinit"]
@@ -123,6 +129,7 @@ depends-member:
 - ["C12FastttCamera6Filter", "filterImage"]
 - ["C12FastttCamera6Filter", "filterName"]
 - ["C12FastttCamera6Filter", "filterType"]
+- ["C12FastttCamera6Filter", "filterTypes"]
 - ["C12FastttCamera6Filter", "filterWithType"]
 - ["C12FastttCamera6Filter", "imageForFilterType"]
 - ["C12FastttCamera6Filter", "init"]
@@ -137,6 +144,7 @@ depends-member:
 - ["PSs8Hashable", "HighContrast"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - ["PSs8Hashable", "None"]
+- ["PSs8Hashable", "RedEyes"]
 - ["PSs8Hashable", "Retro"]
 - ["PSs8Hashable", "Sepia"]
 - !private ["PSs8Hashable", "UIImage"]
@@ -145,6 +153,7 @@ depends-member:
 - ["PSs8Hashable", "filterImage"]
 - ["PSs8Hashable", "filterName"]
 - ["PSs8Hashable", "filterType"]
+- ["PSs8Hashable", "filterTypes"]
 - ["PSs8Hashable", "filterWithType"]
 - ["PSs8Hashable", "hashValue"]
 - ["PSs8Hashable", "imageForFilterType"]
@@ -181,6 +190,7 @@ depends-member:
 - ["CSo8NSObject", "filterImage"]
 - ["CSo8NSObject", "filterName"]
 - ["CSo8NSObject", "filterType"]
+- ["CSo8NSObject", "filterTypes"]
 - ["CSo8NSObject", "filterWithType"]
 - ["CSo8NSObject", "imageForFilterType"]
 - ["CSo8NSObject", "init"]
@@ -194,6 +204,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "filterImage"]
 - ["PSo16NSObjectProtocol", "filterName"]
 - ["PSo16NSObjectProtocol", "filterType"]
+- ["PSo16NSObjectProtocol", "filterTypes"]
 - ["PSo16NSObjectProtocol", "filterWithType"]
 - ["PSo16NSObjectProtocol", "imageForFilterType"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -344,4 +355,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "bc52318da02fc41ad1ecb5641fd8a5ed"
+interface-hash: "247ba96e7916c58235c95879b031425e"

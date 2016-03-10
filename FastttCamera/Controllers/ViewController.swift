@@ -9,12 +9,15 @@
 import UIKit
 import Photos
 
-class ViewController: UIViewController, FastttCameraDelegate {
+class ViewController: UIViewController, FastttCameraDelegate, FilterScrollViewDelegate {
     
-    @IBOutlet weak var cameraView: UIView!
-    @IBOutlet weak var imageView: UIImageView!
     var camera: FastttFilterCamera!
     var currentFilter: Filter?
+    var passImage: UIImage?
+    var filterImageViews = [UIImageView]()
+    
+    @IBOutlet weak var cameraView: UIView!
+    @IBOutlet weak var filterScrollView: FilterScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +30,7 @@ class ViewController: UIViewController, FastttCameraDelegate {
         camera.maxScaledDimension = 600
         self.fastttAddChildViewController(camera)
         
-        imageView.image = camera.filterImage
+        filterScrollView.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,18 +40,9 @@ class ViewController: UIViewController, FastttCameraDelegate {
     
     // MARK: - FastttCameraDelegate
     func cameraController(cameraController: FastttCameraInterface!, didFinishCapturingImage capturedImage: FastttCapturedImage!) {
-
-        let image = capturedImage.fullImage
-        PHPhotoLibrary.sharedPhotoLibrary().performChanges({ () -> Void in
-            PHAssetChangeRequest.creationRequestForAssetFromImage(image)
-            }) { (succeed, error) -> Void in
-                if succeed == true {
-                    print("保存成功!")
-                }
-                
-                if error != nil {
-                    print("error")
-                }
+        passImage = capturedImage.fullImage
+        if passImage != nil {
+            self.performSegueWithIdentifier("toEdit", sender: nil)
         }
     }
     
@@ -59,7 +53,12 @@ class ViewController: UIViewController, FastttCameraDelegate {
     func cameraController(cameraController: FastttCameraInterface!, didFinishNormalizingCapturedImage capturedImage: FastttCapturedImage!) {
         
     }
-
+    
+    // MARK: - FilterScrollView Delegate
+    func filterButtonTapped(button: UIButton) {
+        camera.filterImage = Filter.imageForFilterType(Filter.filterTypes[button.tag])
+    }
+    
     
     // MARK: - Private
 
@@ -84,13 +83,19 @@ class ViewController: UIViewController, FastttCameraDelegate {
             }else {
                 camera.cameraTorchMode = FastttCameraTorchMode.Off
             }
+        }else {
+            print("TorchMode is currently unavailable.")
         }
     }
     
-    @IBAction private func changeFilter() {
+    private func changeFilter() {
         self.currentFilter = self.currentFilter!.nextFilter()
         camera.filterImage = self.currentFilter!.filterImage
-        imageView.image = camera.filterImage
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let editViewController = segue.destinationViewController as! EditViewController
+        editViewController.image = passImage
     }
 }
 

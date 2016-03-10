@@ -16,12 +16,13 @@ class Filter: NSObject {
         case HighContrast
         case BW
         case Sepia
+        case RedEyes
     }
 
     var filterType: FastttFilterType = .None
     var filterName: String?
     var filterImage: UIImage?
-
+    static let filterTypes: [FastttFilterType] = [.None, .Retro, .HighContrast, .BW, .Sepia, .RedEyes]
 
     class func filterWithType(filterType: FastttFilterType) -> Filter {
         let imageFilter = Filter()
@@ -50,6 +51,9 @@ class Filter: NSObject {
             self.filterType = .BW
             break
         case .BW:
+            self.filterType = .RedEyes
+            break
+        case .RedEyes:
             self.filterType = .None
             break
         }
@@ -70,6 +74,9 @@ class Filter: NSObject {
             break
         case .BW:
             lookupImageName = "BWFilter"
+            break
+        case .RedEyes:
+            lookupImageName = "RedEyes"
             break
         case .None:
             break
@@ -97,6 +104,9 @@ class Filter: NSObject {
             break
         case .BW:
             filterName = "Black + White"
+            break
+        case .RedEyes:
+            filterName = "RedEyes"
             break
         case .None:
             filterName = "None"

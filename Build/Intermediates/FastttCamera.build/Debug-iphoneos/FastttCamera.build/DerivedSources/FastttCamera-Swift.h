@@ -88,6 +88,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import ObjectiveC;
+@import CoreGraphics;
 #endif
 
 #import "/Users/Masuhara/Desktop/FastttCamera/FastttCamera/FastttCamera-Bridging-Header.h"
@@ -111,6 +112,22 @@ SWIFT_CLASS("_TtC12FastttCamera11AppDelegate")
 @end
 
 @class UIImage;
+@class UIImageView;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12FastttCamera18EditViewController")
+@interface EditViewController : UIViewController
+@property (nonatomic, strong) UIImage * __nullable image;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imageView;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)shareToTwitter;
+- (IBAction)shareToFacebook;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC12FastttCamera6Filter")
 @interface Filter : NSObject
@@ -120,25 +137,47 @@ SWIFT_CLASS("_TtC12FastttCamera6Filter")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol UIScrollViewDelegate;
+@class UIButton;
+@protocol FilterScrollViewDelegate;
+
+SWIFT_CLASS("_TtC12FastttCamera16FilterScrollView")
+@interface FilterScrollView : UIScrollView
+@property (nonatomic, weak) id <FilterScrollViewDelegate> __nullable delegateInterceptor;
+@property (nonatomic, strong) id <UIScrollViewDelegate> __nullable delegate;
+@property (nonatomic, copy) NSArray<UIImage *> * __nullable images;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)tapButton:(UIButton * __nonnull)button;
+@end
+
+
+SWIFT_PROTOCOL("_TtP12FastttCamera24FilterScrollViewDelegate_")
+@protocol FilterScrollViewDelegate <UIScrollViewDelegate>
+- (void)filterButtonTapped:(UIButton * __nonnull)button;
+@end
+
 @class FastttFilterCamera;
 @protocol FastttCameraInterface;
 @class FastttCapturedImage;
+@class UIStoryboardSegue;
 @class UIView;
-@class UIImageView;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12FastttCamera14ViewController")
-@interface ViewController : UIViewController <FastttCameraDelegate>
-@property (nonatomic, weak) IBOutlet UIView * __null_unspecified cameraView;
-@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imageView;
+@interface ViewController : UIViewController <UIScrollViewDelegate, FilterScrollViewDelegate, FastttCameraDelegate>
 @property (nonatomic, strong) FastttFilterCamera * __null_unspecified camera;
 @property (nonatomic, strong) Filter * __nullable currentFilter;
+@property (nonatomic, strong) UIImage * __nullable passImage;
+@property (nonatomic, copy) NSArray<UIImageView *> * __nonnull filterImageViews;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified cameraView;
+@property (nonatomic, weak) IBOutlet FilterScrollView * __null_unspecified filterScrollView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)cameraController:(id <FastttCameraInterface> __null_unspecified)cameraController didFinishCapturingImage:(FastttCapturedImage * __null_unspecified)capturedImage;
 - (void)cameraController:(id <FastttCameraInterface> __null_unspecified)cameraController didFinishScalingCapturedImage:(FastttCapturedImage * __null_unspecified)capturedImage;
 - (void)cameraController:(id <FastttCameraInterface> __null_unspecified)cameraController didFinishNormalizingCapturedImage:(FastttCapturedImage * __null_unspecified)capturedImage;
+- (void)filterButtonTapped:(UIButton * __nonnull)button;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

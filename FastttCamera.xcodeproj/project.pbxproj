@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A5B31C71C91CDF9005A316C /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B31C61C91CDF9005A316C /* EditViewController.swift */; };
+		7A5B31CC1C91D10C005A316C /* FilterScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B31CB1C91D10C005A316C /* FilterScrollView.swift */; };
+		7A5B31CE1C91EB0D005A316C /* cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A5B31CD1C91EB0D005A316C /* cancel@2x.png */; };
 		7AABB0531C8EEA8F00B49B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AABB0521C8EEA8F00B49B7D /* AppDelegate.swift */; };
 		7AABB0551C8EEA8F00B49B7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AABB0541C8EEA8F00B49B7D /* ViewController.swift */; };
 		7AABB0581C8EEA8F00B49B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0561C8EEA8F00B49B7D /* Main.storyboard */; };
@@ -19,6 +22,7 @@
 		7AABB07B1C8F1A8900B49B7D /* flashbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB07A1C8F1A8900B49B7D /* flashbutton@2x.png */; };
 		7AABB0961C903AE200B49B7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0951C903AE200B49B7D /* Images.xcassets */; };
 		7AABB0981C9080C700B49B7D /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AABB0971C9080C700B49B7D /* Filter.swift */; };
+		7AABB0A11C90975C00B49B7D /* redeyes.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AABB0A01C90975C00B49B7D /* redeyes.png */; };
 		ED174B61CA7AB4FB52ECEEEE /* libPods-FastttCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A96A885F04D587F9E0DDDD9 /* libPods-FastttCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,9 @@
 		058E0BC05C11EE57BF4692B3 /* Pods-FastttCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastttCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-FastttCamera/Pods-FastttCamera.release.xcconfig"; sourceTree = "<group>"; };
 		3639740F01C496A26CDE4E07 /* Pods-FastttCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastttCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FastttCamera/Pods-FastttCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		6A96A885F04D587F9E0DDDD9 /* libPods-FastttCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FastttCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5B31C61C91CDF9005A316C /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		7A5B31CB1C91D10C005A316C /* FilterScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterScrollView.swift; sourceTree = "<group>"; };
+		7A5B31CD1C91EB0D005A316C /* cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@2x.png"; sourceTree = "<group>"; };
 		7AABB04F1C8EEA8F00B49B7D /* FastttCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastttCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AABB0521C8EEA8F00B49B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AABB0541C8EEA8F00B49B7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 		7AABB07A1C8F1A8900B49B7D /* flashbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashbutton@2x.png"; sourceTree = "<group>"; };
 		7AABB0951C903AE200B49B7D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7AABB0971C9080C700B49B7D /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		7AABB0A01C90975C00B49B7D /* redeyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redeyes.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +80,40 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7A5B31C41C91CD16005A316C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB0521C8EEA8F00B49B7D /* AppDelegate.swift */,
+				7AABB0541C8EEA8F00B49B7D /* ViewController.swift */,
+				7A5B31C61C91CDF9005A316C /* EditViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A5B31C51C91CD35005A316C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7AABB0971C9080C700B49B7D /* Filter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A5B31CA1C91D0F4005A316C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A5B31CB1C91D10C005A316C /* FilterScrollView.swift */,
+			);
+			name = Views;
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7AABB0461C8EEA8F00B49B7D = {
 			isa = PBXGroup;
 			children = (
 				7AABB0511C8EEA8F00B49B7D /* FastttCamera */,
-				7AABB0501C8EEA8F00B49B7D /* Products */,
-				47059F0029844B2BC6F0C7E1 /* Pods */,
 				3C42953404C6D19EBC7F19A6 /* Frameworks */,
+				47059F0029844B2BC6F0C7E1 /* Pods */,
+				7AABB0501C8EEA8F00B49B7D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,15 +128,12 @@
 		7AABB0511C8EEA8F00B49B7D /* FastttCamera */ = {
 			isa = PBXGroup;
 			children = (
+				7A5B31C41C91CD16005A316C /* Controllers */,
+				7A5B31C51C91CD35005A316C /* Models */,
+				7A5B31CA1C91D0F4005A316C /* Views */,
 				7AABB06F1C8F14A600B49B7D /* Resources */,
-				7AABB0521C8EEA8F00B49B7D /* AppDelegate.swift */,
-				7AABB0541C8EEA8F00B49B7D /* ViewController.swift */,
-				7AABB0971C9080C700B49B7D /* Filter.swift */,
-				7AABB0561C8EEA8F00B49B7D /* Main.storyboard */,
-				7AABB0951C903AE200B49B7D /* Images.xcassets */,
-				7AABB0591C8EEA8F00B49B7D /* Assets.xcassets */,
-				7AABB05E1C8EEA8F00B49B7D /* Info.plist */,
 				7AABB0641C8EEE1400B49B7D /* FastttCamera-Bridging-Header.h */,
+				7AABB0561C8EEA8F00B49B7D /* Main.storyboard */,
 			);
 			path = FastttCamera;
 			sourceTree = "<group>";
@@ -121,18 +153,23 @@
 			children = (
 				7AABB09B1C908CE800B49B7D /* Camera */,
 				7AABB0681C8F052E00B49B7D /* Defaults */,
+				7AABB0591C8EEA8F00B49B7D /* Assets.xcassets */,
+				7AABB0951C903AE200B49B7D /* Images.xcassets */,
+				7AABB05E1C8EEA8F00B49B7D /* Info.plist */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7AABB09B1C908CE800B49B7D /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				7A5B31CD1C91EB0D005A316C /* cancel@2x.png */,
 				7AABB07A1C8F1A8900B49B7D /* flashbutton@2x.png */,
-				7AABB0761C8F17DE00B49B7D /* takebutton@2x.png */,
 				7AABB0721C8F15BA00B49B7D /* flipcamera@2x.png */,
+				7AABB0A01C90975C00B49B7D /* redeyes.png */,
+				7AABB0761C8F17DE00B49B7D /* takebutton@2x.png */,
 			);
-			name = Camera;
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AABB06C1C8F052E00B49B7D /* Default-568h@2x.png in Resources */,
+				7A5B31CE1C91EB0D005A316C /* cancel@2x.png in Resources */,
 				7AABB07B1C8F1A8900B49B7D /* flashbutton@2x.png in Resources */,
 				7AABB05A1C8EEA8F00B49B7D /* Assets.xcassets in Resources */,
 				7AABB0581C8EEA8F00B49B7D /* Main.storyboard in Resources */,
 				7AABB06D1C8F052E00B49B7D /* Default-667h@2x.png in Resources */,
 				7AABB0731C8F15BA00B49B7D /* flipcamera@2x.png in Resources */,
 				7AABB06E1C8F052E00B49B7D /* Default-736h@3x.png in Resources */,
+				7AABB0A11C90975C00B49B7D /* redeyes.png in Resources */,
 				7AABB0961C903AE200B49B7D /* Images.xcassets in Resources */,
 				7AABB0771C8F17DE00B49B7D /* takebutton@2x.png in Resources */,
 			);
@@ -263,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5B31CC1C91D10C005A316C /* FilterScrollView.swift in Sources */,
+				7A5B31C71C91CDF9005A316C /* EditViewController.swift in Sources */,
 				7AABB0551C8EEA8F00B49B7D /* ViewController.swift in Sources */,
 				7AABB0981C9080C700B49B7D /* Filter.swift in Sources */,
 				7AABB0531C8EEA8F00B49B7D /* AppDelegate.swift in Sources */,
@@ -278,6 +319,7 @@
 				7AABB0571C8EEA8F00B49B7D /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -370,7 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = FastttCamera/Info.plist;
+				INFOPLIST_FILE = FastttCamera/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.masuhara.FastttCamera;
@@ -386,7 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = FastttCamera/Info.plist;
+				INFOPLIST_FILE = FastttCamera/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.masuhara.FastttCamera;
